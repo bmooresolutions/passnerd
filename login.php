@@ -23,3 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <input name="password" type="password" placeholder="Password" required>
   <button type="submit">Login</button>
 </form>
+<form method="POST">
+  <input name="username" placeholder="Username" required>
+  <input name="password" type="password" placeholder="Password" required>
+  <input name="otp_code" placeholder="OTP Code" required>
+  <button type="submit">Login</button>
+</form>
