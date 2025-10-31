@@ -30,6 +30,20 @@ $stmt->execute(["%$search%", "%$search%", "%$search%"]);
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PassNERD Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <h1>PassNERD</h1>
+  <img src="logo.png" alt="PassNERD Logo" style="height: 60px;">
+</div>
+
 <a href="logout.php">Logout</a>
 
 <form method="POST">
@@ -73,3 +87,6 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </tr>
   <?php endforeach; ?>
 </table>
+
+</body>
+</html>
